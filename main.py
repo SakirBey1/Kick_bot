@@ -1,5 +1,5 @@
 '''
-this code by yeuda by https://t.me/m100achuz
+Kod sahibi https://t.me/SakirBey
 
 
 pip install Pyrogram
@@ -18,14 +18,14 @@ token = os.environ.get('BOT_TOKEN')
 app = Client("remove", app_id, app_key, bot_token=token)
 
 
-STARTED = 'start removing users...'
-FINISH = 'done, {} users were removed from group'
-ERROR = 'something failed!'
-ADMIN_NEEDED = "i need to be admin!"
-PRIVATE = '''Hi, I'm a robot to help you remove all users from your group.
+STARTED = 'kullanıcıları eklemeye başla...'
+FINISH = 'bitti, {} kullanıcı gruptan çıkarıldı'
+ERROR = 'bir şey başarısız oldu!'
+ADMIN_NEEDED = "admin olmam lazım!"
+PRIVATE = '''Merhaba üye eklemek için sedat tarafından geliştirilmiş bir bottum Sahibim den başka kullanıma kapalıdır.
 
-Now add me to a group and don't forget to give me the permissions.
-Then send /kick in the group and I will start my work.'''
+Şimdi beni bir gruba ekle ve bana izinleri vermeyi unutma.
+O zaman gruba gönder , ben de işime başlayayım.'''
 
 @app.on_message(filters.group & filters.command("kick"))
 def main(_, msg: Message):
