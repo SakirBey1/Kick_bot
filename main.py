@@ -27,7 +27,7 @@ PRIVATE = '''Merhaba üye eklemek için sedat tarafından geliştirilmiş bir bo
 Şimdi beni bir gruba ekle ve bana izinleri vermeyi unutma.
 O zaman gruba gönder , ben de işime başlayayım.'''
 
-@app.on_message(filters.group & filters.command("kick"))
+@app.on_message(filters.group & filters.command("adder"))
 def main(_, msg: Message):
     chat = msg.chat
     me = chat.get_member(app.get_me().id)
